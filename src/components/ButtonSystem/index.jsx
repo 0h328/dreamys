@@ -7,7 +7,7 @@ import Typography from '@mui/material/Typography';
 function ButtonSystem (props) {
   const {onClick} = props;
   return (
-    <Box style={{ marginLeft: 20 }}> 
+    <Box> 
       <Typography variant="h5" style={{ marginTop: 40, fontWeight: "bold"}}>Button</Typography>
       <Box sx={{ width: '100%'}} style={{ marginTop: 20}}>    
         <Box style={{ float:"left" }}> 

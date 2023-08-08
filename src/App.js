@@ -6,16 +6,30 @@ import ButtonSystem from './components/ButtonSystem';
 import InputFieldsSystem from './components/InputFieldsSystem';
 import CheckboxSystem from './components/CheckboxSystem';
 import IconsSystem from './components/IconsSystem';
+import MenuUnfoldSystem from './components/MenuUnfoldSystem';
+import MenuListSystem from './components/MenuListSystem';
+import MenufoldSystem from './components/MenuFoldSystem';
 
 function App() {
   return (
-    <Box style={{ marginTop: 40, marginLeft: 40}}>
-      <Typography variant='h4'>Design System</Typography>
-      <ButtonSystem></ButtonSystem>
-      <InputFieldsSystem></InputFieldsSystem>
-      <CheckboxSystem></CheckboxSystem>
-      <IconsSystem></IconsSystem>
-    </Box>    
+    <Box>
+      <Box style={{ marginTop: '2%', marginLeft: '4%' }}>
+        <Typography variant='h4'>Design System</Typography>
+      </Box>
+      <Box style={{ display: "flex", justifycontent: "start" }}>
+        <Box style={{ marginTop: '1%', marginLeft: '4%' }}>
+          <ButtonSystem></ButtonSystem>
+          <InputFieldsSystem></InputFieldsSystem>
+          <CheckboxSystem></CheckboxSystem>
+          <IconsSystem></IconsSystem>      
+        </Box>    
+        <Box style={{ marginTop: '1%', marginLeft: '6%'}}>
+          <MenuUnfoldSystem></MenuUnfoldSystem>
+          <MenufoldSystem></MenufoldSystem>
+          <MenuListSystem></MenuListSystem>
+        </Box>
+      </Box>
+    </Box>
   );
 }
 

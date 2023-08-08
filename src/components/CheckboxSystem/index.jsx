@@ -1,9 +1,12 @@
 import React, { useState } from 'react';
-import Box from '@mui/material/Box';
-import Typography from '@mui/material/Typography';
-import Stack from '@mui/material/Stack';
-import Radio from '@mui/material/Radio';
-import Checkbox from '@mui/material/Checkbox';
+import { 
+  Box,
+  Typography,
+  Stack,
+  Radio,
+  Checkbox
+ } from '@mui/material';
+
 
 const label = { inputProps: { 'aria-label': 'checkbox demo'}};
 function CheckboxSystem () {
@@ -15,7 +18,7 @@ function CheckboxSystem () {
 
   return (
     <Box>
-      <Typography variant="h5" style={{ marginTop: 30, fontWeight: "bold"}}>Check box / Radio button</Typography>
+      <Typography variant="h5" style={{ marginTop: '15%', fontWeight: "bold"}}>Check box / Radio button</Typography>
       <Box style={{ float:"left" }}> 
         <Stack spacing={2}>
           <Typography variant="h6" style={{ marginTop: 10}}>Default</Typography>

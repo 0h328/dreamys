@@ -1,14 +1,17 @@
 import React from 'react';
-import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
-import Stack from '@mui/material/Stack';
-import Typography from '@mui/material/Typography';
+import { 
+  Box,  
+  Button, 
+  Stack, 
+  Typography 
+} from '@mui/material';
+
 
 function ButtonSystem (props) {
   const {onClick} = props;
   return (
     <Box> 
-      <Typography variant="h5" style={{ marginTop: 40, fontWeight: "bold"}}>Button</Typography>
+      <Typography variant="h5" style={{ marginTop: '10%', fontWeight: "bold"}}>Button</Typography>
       <Box sx={{ width: '100%'}} style={{ marginTop: 20}}>    
         <Box style={{ float:"left" }}> 
           <Stack spacing={2}> 
